@@ -1,0 +1,307 @@
+{
+	"id": "e0e6a2e5-ad68-40f3-a0dd-4e4c96f2c36e",
+	"name": "Contact-Phone-Email",
+	"description": null,
+	"auth": null,
+	"events": null,
+	"variables": [],
+	"order": [
+		"9ce288f4-b34f-4e44-88bf-8759abf61612",
+		"c696a68f-46c7-49b5-9c28-c2eeca94ca16",
+		"151c9f58-01be-419c-a70a-f82db95946eb",
+		"09d25d2a-a8f6-4f78-b502-00e3b3013ea8",
+		"c913969c-8afa-4f6e-947a-5d0f8abf0847",
+		"e22966db-0eb0-4447-9d13-c21d5dae1de1",
+		"a1cefe3d-e90d-4edb-96a1-6d76f0488cfc",
+		"f2b39785-ad0b-497c-8af9-03df11569027"
+	],
+	"folders_order": [],
+	"folders": [],
+	"requests": [
+		{
+			"id": "09d25d2a-a8f6-4f78-b502-00e3b3013ea8",
+			"name": "http://localhost:8001/api/contact/1/email/3",
+			"url": "http://localhost:8001/api/contact/1/email/4",
+			"description": "Delete Contact Email",
+			"data": null,
+			"dataMode": null,
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": null,
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer martin@creditdevice:bhavin0009",
+					"description": null,
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"headers": "Accept: application/json\nAuthorization: Bearer martin@creditdevice:bhavin0009\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "151c9f58-01be-419c-a70a-f82db95946eb",
+			"name": "http://localhost:8001/api/contact/1/phone/3",
+			"url": "http://localhost:8001/api/contact/1/phone/1",
+			"description": "Drop Contact Phone Number",
+			"data": null,
+			"dataMode": null,
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": null,
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer martin@creditdevice:bhavin0009",
+					"description": null,
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"headers": "Accept: application/json\nAuthorization: Bearer martin@creditdevice:bhavin0009\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "9ce288f4-b34f-4e44-88bf-8759abf61612",
+			"name": "http://localhost:8001/api/contact/1/phone",
+			"url": "http://localhost:8001/api/contact/8/phone",
+			"description": "Get All Phone Number",
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer martin@creditdevice:bhavin0009",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"headers": "Accept: application/json\nAuthorization: Bearer martin@creditdevice:bhavin0009\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "a1cefe3d-e90d-4edb-96a1-6d76f0488cfc",
+			"name": "http://localhost:8001/api/contact/2/phone/2",
+			"url": "http://localhost:8001/api/contact/1/phone/1",
+			"description": "Update Contact Phone Number",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": null,
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer martin@creditdevice:bhavin0009",
+					"description": null,
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": null,
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\r\n\t\"number\": \"9427380734\",\r\n\t\"type\": \"Avalon Courtyard 1\"\r\n}",
+			"headers": "Accept: application/json\nAuthorization: Bearer martin@creditdevice:bhavin0009\nContent-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "c696a68f-46c7-49b5-9c28-c2eeca94ca16",
+			"name": "http://localhost:8001/api/contact/1/email",
+			"url": "http://localhost:8001/api/contact/1/email",
+			"description": "Get All Emails",
+			"data": null,
+			"dataMode": null,
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer martin@creditdevice:bhavin0009",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"headers": "Accept: application/json\nAuthorization: Bearer martin@creditdevice:bhavin0009\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "c913969c-8afa-4f6e-947a-5d0f8abf0847",
+			"name": "http://localhost:8001/api/contact/2/phone",
+			"url": "http://localhost:8001/api/contact/1/phone",
+			"description": "Add Phone number For Specific Contact",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": null,
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer martin@creditdevice:bhavin0009",
+					"description": null,
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": null,
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\r\n\t\"number\": \"123456789\",\r\n\t\"type\": \"Office\"\r\n}",
+			"headers": "Accept: application/json\nAuthorization: Bearer martin@creditdevice:bhavin0009\nContent-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "e22966db-0eb0-4447-9d13-c21d5dae1de1",
+			"name": "http://localhost:8001/api/contact/2/Email",
+			"url": "http://localhost:8001/api/contact/2/email",
+			"description": "Add Email For Specific Contact",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": null,
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer martin@creditdevice:bhavin0009",
+					"description": null,
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": null,
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\r\n\t\"email\": \"bhavin.smart@gmail.com\",\r\n\t\"type\": \"Home\"\r\n}",
+			"headers": "Accept: application/json\nAuthorization: Bearer martin@creditdevice:bhavin0009\nContent-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "f2b39785-ad0b-497c-8af9-03df11569027",
+			"name": "http://localhost:8001/api/contact/2/phone/2 Copy",
+			"url": "http://localhost:8001/api/contact/1/email/4",
+			"description": "Update Contact Phone Number",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": null,
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer martin@creditdevice:bhavin0009",
+					"description": null,
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": null,
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\r\n\t\"email\": \"aj@softinform.dk\",\r\n\t\"type\": \"Home\"\r\n}",
+			"headers": "Accept: application/json\nAuthorization: Bearer martin@creditdevice:bhavin0009\nContent-Type: application/json\n",
+			"pathVariables": {}
+		}
+	]
+}

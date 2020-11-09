@@ -1,0 +1,218 @@
+{
+	"id": "8953cdee-0526-44fd-aeb6-2b516f623927",
+	"name": "Address-API",
+	"description": null,
+	"auth": null,
+	"events": null,
+	"variables": [],
+	"order": [
+		"f04d9157-0ade-48d0-9bb6-acef08a865de",
+		"2cca5e24-ff47-4722-a5f6-3f64be94d906",
+		"3dc0757d-ebfd-4f3d-a69b-4067b059bbda",
+		"238067c1-acf8-4b62-b040-2ab89144770b",
+		"ff8162f9-2a55-4d37-8272-e0a2a740dccc"
+	],
+	"folders_order": [],
+	"folders": [],
+	"requests": [
+		{
+			"id": "238067c1-acf8-4b62-b040-2ab89144770b",
+			"name": "http://localhost:8001/api/address",
+			"url": "http://localhost:8001/api/address",
+			"description": "Add new address",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": null,
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": null,
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer martin@creditdevice:bhavin0009",
+					"description": null,
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n\t\"company_id\": \"1\",\n\t\"is_primary\": \"0\",\n\t\"type\": \"office\",\n\t\"street\": \"Avalon Courtyard\",\n\t\"housenumber\": \"Nr. Cadila Bridge\",\n\t\"zipcode\": \"380050\",\n\t\"city\": \"Ahmedabad\",\n\t\"country_code\": \"11\"\n}\n",
+			"headers": "Accept: application/json\nContent-Type: application/json\nAuthorization: Bearer martin@creditdevice:bhavin0009\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "2cca5e24-ff47-4722-a5f6-3f64be94d906",
+			"name": "http://localhost:8001/api/company/30",
+			"url": "http://localhost:8001/api/address/22",
+			"description": "Delete Address",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": null,
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer martin@creditdevice:bhavin0009",
+					"description": null,
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": null,
+					"type": "text"
+				}
+			],
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "",
+			"headers": "Accept: application/json\nAuthorization: Bearer martin@creditdevice:bhavin0009\nContent-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "3dc0757d-ebfd-4f3d-a69b-4067b059bbda",
+			"name": "http://localhost:8001/api/company/30 Copy",
+			"url": "http://localhost:8001/api/deletecompanyaddress/22",
+			"description": "Delete Address",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": null,
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer martin@creditdevice:bhavin0009",
+					"description": null,
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": null,
+					"type": "text"
+				}
+			],
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "",
+			"headers": "Accept: application/json\nAuthorization: Bearer martin@creditdevice:bhavin0009\nContent-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "f04d9157-0ade-48d0-9bb6-acef08a865de",
+			"name": "http://localhost:8001/api/address",
+			"url": "http://localhost:8001/api/address/202853",
+			"description": "Address List",
+			"data": null,
+			"dataMode": null,
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": null,
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer martin@creditdevice:bhavin0009",
+					"description": null,
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "",
+					"value": "",
+					"description": null,
+					"type": "text",
+					"enabled": false
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"headers": "Accept: application/json\nAuthorization: Bearer martin@creditdevice:bhavin0009\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "ff8162f9-2a55-4d37-8272-e0a2a740dccc",
+			"name": "http://localhost:8001/api/address Copy",
+			"url": "http://localhost:8001/api/address",
+			"description": "Add new address",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": null,
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": null,
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer martin@creditdevice:bhavin0009",
+					"description": null,
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n\t\"address_id\": \"26\",\n\t\"company_id\": \"1\",\n\t\"is_primary\": \"0\",\n\t\"type\": \"home\",\n\t\"street\": \"Avalon Courtyard -1\",\n\t\"housenumber\": \"G-302\",\n\t\"zipcode\": \"380050\",\n\t\"city\": \"Ahmedabad\",\n\t\"country_code\": \"11\"\n}\n",
+			"headers": "Accept: application/json\nContent-Type: application/json\nAuthorization: Bearer martin@creditdevice:bhavin0009\n",
+			"pathVariables": {}
+		}
+	]
+}

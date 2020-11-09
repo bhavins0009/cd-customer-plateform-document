@@ -1,0 +1,21 @@
+SELECT
+  child.crm_bed_id AS company_id,
+  child.crm_bed_naam AS NAME,
+  child.crm_bed_telefoonnummer AS phonenumber,
+  child.crm_bed_webadres AS website,
+  child.crm_bed_emailadres AS email,
+  child.crm_bed_klantnummer AS number,
+  child.crm_bed_btwnummer AS vatnumber,
+  crm_adr_adres AS address_street,
+  crm_adr_postcode AS address_zipcode,
+  crm_adr_plaats AS address_city,
+  land.`lnd_iso_2` AS address_country,
+  'office' AS address_type,
+  IFNULL(parent.crm_bed_id, 86268) AS distribution_partner_id
+FROM
+  crm_creditdevice.crm_bedrijf child
+  INNER JOIN  crm_creditdevice.crm_adres ON child.crm_bed_id = crm_adres.crm_adr_bed_id AND crm_adr_adt_id=1
+  INNER JOIN  crm_creditdevice.land ON crm_adr_lnd_id = land_id
+  LEFT JOIN dd_clients.reseller ON crm_bed_reseller = reseller.id
+  LEFT JOIN crm_creditdevice.crm_bedrijf parent ON reseller.`external_id`= parent.crm_bed_id
+WHERE child.crm_bed_is_account = 1

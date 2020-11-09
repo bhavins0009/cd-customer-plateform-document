@@ -1,0 +1,164 @@
+{
+	"id": "9dda5a89-769b-49aa-9125-92bac36a56ea",
+	"name": "Segment",
+	"description": null,
+	"auth": null,
+	"events": null,
+	"variables": [],
+	"order": [
+		"5d6ae9bf-877c-43eb-a86b-03228e6b7779",
+		"d3f19455-d1df-455e-9d8e-3de811b0db5e",
+		"cb084e03-b193-404a-a5b2-067f0885b02e",
+		"c4e69547-3a76-423e-a437-87d8dc9b9b4d"
+	],
+	"folders_order": [],
+	"folders": [],
+	"requests": [
+		{
+			"id": "5d6ae9bf-877c-43eb-a86b-03228e6b7779",
+			"name": "http://localhost:8001/api/segment",
+			"url": "http://localhost:8001/api/segment/2",
+			"description": "List of all segments",
+			"data": null,
+			"dataMode": null,
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": null,
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer martin@creditdevice:bhavin0009",
+					"description": null,
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"headers": "Accept: application/json\nAuthorization: Bearer martin@creditdevice:bhavin0009\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "c4e69547-3a76-423e-a437-87d8dc9b9b4d",
+			"name": "http://localhost:8001/api/segment/5",
+			"url": "http://localhost:8001/api/segment/5",
+			"description": "Delete Segment",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer martin@creditdevice:bhavin0009",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "",
+			"headers": "Accept: application/json\nAuthorization: Bearer martin@creditdevice:bhavin0009\nContent-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "cb084e03-b193-404a-a5b2-067f0885b02e",
+			"name": "http://localhost:8001/api/segment/5",
+			"url": "http://localhost:8001/api/segment/5",
+			"description": null,
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer martin@creditdevice:bhavin0009",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"type": "text"
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n    \"code\": \"code 225\",\n\t\"description\": \"Segmantation 225\",\n\t\"distribution_partner_id\": \"225\"\n}",
+			"headers": "Accept: application/json\nAuthorization: Bearer martin@creditdevice:bhavin0009\nContent-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "d3f19455-d1df-455e-9d8e-3de811b0db5e",
+			"name": "http://localhost:8001/api/segment",
+			"url": "http://localhost:8001/api/segment",
+			"description": "Add Segment into Table",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": null,
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer martin@creditdevice:bhavin0009",
+					"description": null,
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": null,
+					"type": "text"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n    \"code\": \"code 5\",\n\t\"description\": \"Segmantation 5\",\n\t\"distribution_partner_id\": \"5\"\n}",
+			"headers": "Accept: application/json\nAuthorization: Bearer martin@creditdevice:bhavin0009\nContent-Type: application/json\n",
+			"pathVariables": {}
+		}
+	]
+}

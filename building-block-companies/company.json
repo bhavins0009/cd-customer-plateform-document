@@ -1,0 +1,25 @@
+{
+	"id":1,
+	"name": "CreditDevice B.V",
+	"...."
+	"address":{
+		"primary":{
+			"id": 1,
+			"street": "....",
+			"type": "office"
+		},
+		"additional":[
+			{
+				"id": 2,
+				"street": "...",
+				"type": "postal"
+			},
+			{
+				"id": 3,
+				"street": "...",
+				"type": "postal"
+			}
+		]
+	}
+}
+	

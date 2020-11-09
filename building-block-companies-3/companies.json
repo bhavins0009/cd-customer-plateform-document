@@ -1,0 +1,35 @@
+{
+  "service": "<the service that is called if want to export the list>",
+  "method": "<the method in the service we need to call to export the data>",
+  "export_options": {
+    "Xlsx": "Excel",
+    "Csv": "CSV"
+  },
+  "name": "<the name of the list, translatable label>, like TITLE_GRID_COMPANIES",
+  "filters": [
+    "company.number",
+    "<etc...>"
+  ],
+  "order_options": {
+    "company.number": "<label for this field, like LABEL_COMPANY_NUMBER>",
+    "<etc.>": "<etc>"
+  },
+  "fields": {
+    "company.number": {
+      "html": true,
+      "export": true,
+      "label": "<label for this field, like LABEL_COMPANY_NUMBER>"
+    },
+    "company.number_distribution_partner": {
+      "html": true,
+      "export": true,
+      "label": "<label for this field, like LABEL_NUMBER_DISTRIBUTION_PARTNER>"
+    },
+    "<etc..>": {
+      "html": true,
+      "export": true,
+      "label": "<etc..>"
+    }
+
+  }
+}

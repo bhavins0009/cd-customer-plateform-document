@@ -1,0 +1,107 @@
+{
+	"id": "f963c0db-250a-4a48-bf42-93eb60872cb8",
+	"name": "Country",
+	"description": "Country",
+	"auth": null,
+	"events": null,
+	"variables": [],
+	"order": [
+		"66b70e21-9de6-4b82-b5cb-34063b63292e",
+		"f0375e08-4236-4b0f-9eff-b278f77d0340",
+		"c969caed-4265-4d5b-bef5-932ff3328752"
+	],
+	"folders_order": [],
+	"folders": [],
+	"requests": [
+		{
+			"id": "66b70e21-9de6-4b82-b5cb-34063b63292e",
+			"name": "http://localhost:8001/api/countrylist",
+			"url": "http://localhost:8001/api/countrylist",
+			"description": "Country list",
+			"data": null,
+			"dataMode": null,
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer martin@creditdevice:bhavin0009",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"headers": "Accept: application/json\nAuthorization: Bearer martin@creditdevice:bhavin0009\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "c969caed-4265-4d5b-bef5-932ff3328752",
+			"name": "http://localhost:8001/api/countrybyisocode/NL",
+			"url": "http://localhost:8001/api/countrybyisocode/NL",
+			"description": "Country",
+			"data": null,
+			"dataMode": null,
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer martin@creditdevice:bhavin0009",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"headers": "Accept: application/json\nAuthorization: Bearer martin@creditdevice:bhavin0009\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "f0375e08-4236-4b0f-9eff-b278f77d0340",
+			"name": "http://localhost:8001/api/countrydetail/56",
+			"url": "http://localhost:8001/api/countrydetail/56",
+			"description": null,
+			"data": null,
+			"dataMode": null,
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer martin@creditdevice:bhavin0009",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"headers": "Accept: application/json\nAuthorization: Bearer martin@creditdevice:bhavin0009\n",
+			"pathVariables": {}
+		}
+	]
+}

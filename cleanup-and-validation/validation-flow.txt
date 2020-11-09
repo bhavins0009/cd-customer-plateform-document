@@ -1,0 +1,73 @@
+public function SomeControllerAction()
+{
+	// stores the company data ($company is a company model instance)
+
+	$result = $company->validate();
+	if($result instanceof ValidationResult){
+		// display errors in frontend, use $result->getAll() to get list of error messages
+	}else{
+		// proceed 
+	}
+}
+
+-----------------------------------------------
+
+// company model
+class Company
+{
+
+	public function getValidatorInstance()
+    {
+        if ($this->validation === null) {
+            $this->validation = new ValidatorResult();
+        }
+
+        return $this->validation;
+    }
+
+	public function validate()
+	{		
+		$this->getValidatorInstance()->reset();
+		
+		if($this->isEmpty(...some field to test) || !$this->myFormatCheck(....some field to  test)){
+			  $validation->set(
+					'error_code_for_that_field',
+					'Some label to display as error for missing/wrong data-entry'
+				);
+		}
+		
+	}
+}
+
+
+-----------------------------------------------
+
+
+class ValidatorResult
+{
+    protected $messages = array();
+
+    public function isEmpty()
+    {
+        return empty($this->messages);
+    }
+
+    public function reset()
+    {
+        $this->messages = array();
+        return $this;
+    }
+
+    public function set($id, $text, array $args = array())
+    {
+        $this->messages[$id] = array(
+            'text' => (string) $text,
+            'args' => array_values($args)
+        );
+    }
+
+    public function getAll()
+    {
+        return $this->messages;
+    }   
+}

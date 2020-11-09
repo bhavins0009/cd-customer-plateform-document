@@ -1,0 +1,208 @@
+{
+	"id": "6251ceac-9bdb-491c-a0dc-0c7b52f6839f",
+	"name": "Company-Contact-API",
+	"description": null,
+	"auth": null,
+	"events": null,
+	"variables": [],
+	"order": [
+		"c57fe4bd-1f47-4c38-a645-60ef5fcb5493",
+		"79daa418-6193-4c37-9bb7-845a6e9f4f50",
+		"01866818-2e20-4f65-acb6-70b15887eef8",
+		"0e44e6fa-559d-4296-b4cf-b9472ed469a6",
+		"4e4cf8fe-eef6-4af5-bf30-62d442933ed4"
+	],
+	"folders_order": [],
+	"folders": [],
+	"requests": [
+		{
+			"id": "01866818-2e20-4f65-acb6-70b15887eef8",
+			"name": "http://localhost:8001/api/company/1/contacts Copy Copy",
+			"url": "http://localhost:8001/api/company/2968/contact/1",
+			"description": "Get Single Contact",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": null,
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer martin@creditdevice:bhavin0009",
+					"description": null,
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": null,
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n\t\"contact_type_id\": 4,\n\t\"user_id\": 4,\n\t\"is_person\": 1,\n\t\"description\": \"Divya Solanki\",\n\t\"firstname\": \"Divya\",\n\t\"initials\": \"0\",\n\t\"infixes\": \"0\",\n\t\"lastname\": \"Solanki\",\n\t\"gender\": \"F\",\n\t\"language_coe\": \"EN\"\n}\n",
+			"headers": "Accept: application/json\nAuthorization: Bearer martin@creditdevice:bhavin0009\nContent-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "0e44e6fa-559d-4296-b4cf-b9472ed469a6",
+			"name": "http://localhost:8001/api/company/1/contacts Copy Copy Copy",
+			"url": "http://localhost:8001/api/company/1378/contact/2",
+			"description": "Get Single Contact",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": null,
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer martin@creditdevice:bhavin0009",
+					"description": null,
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": null,
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "",
+			"headers": "Accept: application/json\nAuthorization: Bearer martin@creditdevice:bhavin0009\nContent-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "4e4cf8fe-eef6-4af5-bf30-62d442933ed4",
+			"name": "http://localhost:8001/api/company/1/contacts Copy",
+			"url": "http://localhost:8001/api/company/1/contact/20",
+			"description": "Get Single Contact",
+			"data": null,
+			"dataMode": null,
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": null,
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer martin@creditdevice:bhavin0009",
+					"description": null,
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"headers": "Accept: application/json\nAuthorization: Bearer martin@creditdevice:bhavin0009\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "79daa418-6193-4c37-9bb7-845a6e9f4f50",
+			"name": "http://localhost:8001/api/company/1/contacts Copy",
+			"url": "http://localhost:8001/api/company/2968/contacts",
+			"description": "Get Single Contact",
+			"data": [],
+			"dataOptions": null,
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": null,
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer martin@creditdevice:bhavin000911",
+					"description": null,
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": null,
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n\t\"user_id\": 1,\n\t\"distribution_partner_id\": 2,\n\t\"contact_type_id\": 1,\n\t\"is_person\": 1,\n\t\"description\": \"Creditdevice\",\n\t\"firstname\": \"Martin\",\n\t\"initials\": \"0\",\n\t\"infixes\": \"0\",\n\t\"lastname\": \"marel\",\n\t\"gender\": \"M\",\n\t\"language_code\": \"NL\"\n}\n",
+			"headers": "Accept: application/json\nAuthorization: Bearer martin@creditdevice:bhavin000911\nContent-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "c57fe4bd-1f47-4c38-a645-60ef5fcb5493",
+			"name": "http://localhost:8001/api/company/1/contacts",
+			"url": "http://localhost:8001/api/company/202863/contacts",
+			"description": "Get Single Contact",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": null,
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer martin@creditdevice:bhavin0009",
+					"description": null,
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"rawModeData": "",
+			"headers": "Accept: application/json\nAuthorization: Bearer martin@creditdevice:bhavin0009\n",
+			"pathVariables": {}
+		}
+	]
+}

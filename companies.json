@@ -1,0 +1,67 @@
+{
+  "collection": [
+    {
+      "id": 1,
+      "name": "CreditDevice B.V",
+      "number": 1000,
+      "registration_number": "123456780000",
+      "website": "https://www.creditdevice.com",
+      "distribution_partner": {
+        "id": 1,
+        "name": "CreditDevice B.V.",
+        "number": 1000
+      },
+      "address": {
+        "primary": {
+          "id": 1,
+          "street": "Rudolf Tappenbeckweg",
+          "housenumber": "4",
+          "zipcode": "2202CD",
+          "city": "Noordwijk",
+          "type": "office"
+        },
+        "additional": [
+          {
+            "id": 2,
+            "street": "Postbus 1111PB",
+            "type": "postal"
+          }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "name": "DirectDevice B.V.",
+      "number": 2000,
+      "registration_number": "9876543210000",
+      "website": "https://www.directdevice.nl",
+      "distribution_partner": {
+        "id": 1,
+        "name": "CreditDevice B.V.",
+        "number": 1000
+      },
+      "address": {
+        "primary": {
+          "id": 1,
+          "street": "Rudolf Tappenbeckweg",
+          "housenumber": "4",
+          "zipcode": "2202CD",
+          "city": "Noordwijk",
+          "type": "office"
+        },
+        "additional": [
+          {
+            "id": 2,
+            "street": "Postbus 1111PB",
+            "type": "postal"
+          }
+        ]
+      }
+    }
+  ],
+  "meta": {
+    "offset": 0,
+    "count": 2
+  }
+}
+

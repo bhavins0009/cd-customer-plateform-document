@@ -1,0 +1,470 @@
+{
+	"id": "5f8d2419-cc6a-461f-a572-18cb9ce0a8e7",
+	"name": "Company-API",
+	"description": null,
+	"auth": null,
+	"events": null,
+	"variables": [],
+	"order": [
+		"9bad8383-d8f8-4431-b80d-1d6c5dda4b19",
+		"0523a53b-1114-4d05-8308-1ca11d66c128",
+		"365ce9d5-ce3e-4f66-b8f7-d615c276815b",
+		"8688de77-57b8-44db-bf7a-1cd678df8aac",
+		"9849dfa9-4ace-4eb9-a2ba-cc3c006b97b2",
+		"873784a6-9f5b-46e6-9ad2-708549c656e6",
+		"14bdec7a-2cad-4baa-b4c3-df92e58833b1",
+		"65f2a744-c461-4d37-ad45-4edf2dfd5e15"
+	],
+	"folders_order": [],
+	"folders": [],
+	"requests": [
+		{
+			"id": "0523a53b-1114-4d05-8308-1ca11d66c128",
+			"name": "http://localhost:8001/api/company",
+			"url": "http://localhost:8001/api/company",
+			"description": "Insert/Save a Company",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": null,
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": null,
+					"type": "text"
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer martin@creditdevice:bhavin0009",
+					"description": null,
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n    \"distribution_partner_id\": \"7\",\n\t\"segmentation_id\": \"777\",\n\t\"owner_contact_id\": \"1\",\n\t\"country_id\": \"1\",\n\t\"name\": \"7702 Company\",\n\t\"number\": \"77777\",\n\t\"number_distribution_partner\": \"77\",\n\t\"registration_number\": \"500\",\n\t\"vat_number\": \"5000\",\n\t\"website\": \"www.directdevice.com\",\n\t\"email\": \"bhavin.solanki@softinform.com\",\n\t\"address_type\": \"office\",\n\t\"street\": \"30 Shrirang Society\",\n\t\"zipcode\": \"365601\",\n\t\"city\": \"Amreli\",\n\t\"country_code\": \"EN\"\n}\n\n",
+			"headers": "Accept: application/json\nContent-Type: application/json\nAuthorization: Bearer martin@creditdevice:bhavin0009\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "14bdec7a-2cad-4baa-b4c3-df92e58833b1",
+			"name": "http://localhost:8001/api/company?company_id=7062&distribution_partner_id=1&segmentation_id=1&owner_contact_id=0&name=TransMission%20Almere%20B.V.&number=CD33&number_distribution_partner=&registration_number=&vat_number=&website=&email=&address_type=&stre",
+			"url": "http://localhost:8001/api/company?company_id=7062&distribution_partner_id=1&segmentation_id=1&owner_contact_id=0&name=TransMission%20Almere%20B.V.&number=CD33&number_distribution_partner=&registration_number=&vat_number=&website=&email=&address_type=&street=Wormerweg&housenumber=6&zipcode=1311XB&city=ALMERE&country_code=&country_id=163&bulk_address=YTo1OntzOjE2OiJtdWx0aXBsZV9hZGRyZXNzIjthOjM6e2k6MDtzOjM6IkFBQSI7aToxO3M6MzoiYmJiIjtpOjI7czozOiJjY2MiO31zOjIxOiJtdWx0aXBsZV9ob3VzZV9udW1iZXIiO2E6Mzp7aTowO3M6MjoiMTEiO2k6MTtzOjI6IjIyIjtpOjI7czoyOiIzMyI7fXM6MjA6Im11bHRpcGxlX3Bvc3RhbF9jb2RlIjthOjM6e2k6MDtzOjI6IjExIjtpOjE7czoyOiIyMiI7aToyO3M6MjoiMzMiO31zOjEzOiJtdWx0aXBsZV9jaXR5IjthOjM6e2k6MDtzOjY6ImFtcmVsaSI7aToxO3M6OToiQWhtZWRhYmFkIjtpOjI7czo2OiJtdW1iYWkiO31zOjE2OiJtdWx0aXBsZV9jb3VudHJ5IjthOjM6e2k6MDtzOjExOiJOZXRoZXJsYW5kcyI7aToxO3M6NToiaW5kaWEiO2k6MjtOO319&page=1&limit=10",
+			"description": null,
+			"data": null,
+			"dataMode": null,
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer martin@creditdevice:bhavin0009",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "company_id",
+					"value": "7062",
+					"equals": true,
+					"enabled": true
+				},
+				{
+					"key": "distribution_partner_id",
+					"value": "1",
+					"equals": true,
+					"enabled": true
+				},
+				{
+					"key": "segmentation_id",
+					"value": "1",
+					"equals": true,
+					"enabled": true
+				},
+				{
+					"key": "owner_contact_id",
+					"value": "0",
+					"equals": true,
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "TransMission%20Almere%20B.V.",
+					"equals": true,
+					"enabled": true
+				},
+				{
+					"key": "number",
+					"value": "CD33",
+					"equals": true,
+					"enabled": true
+				},
+				{
+					"key": "number_distribution_partner",
+					"value": "",
+					"equals": true,
+					"enabled": true
+				},
+				{
+					"key": "registration_number",
+					"value": "",
+					"equals": true,
+					"enabled": true
+				},
+				{
+					"key": "vat_number",
+					"value": "",
+					"equals": true,
+					"enabled": true
+				},
+				{
+					"key": "website",
+					"value": "",
+					"equals": true,
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "",
+					"equals": true,
+					"enabled": true
+				},
+				{
+					"key": "address_type",
+					"value": "",
+					"equals": true,
+					"enabled": true
+				},
+				{
+					"key": "street",
+					"value": "Wormerweg",
+					"equals": true,
+					"enabled": true
+				},
+				{
+					"key": "housenumber",
+					"value": "6",
+					"equals": true,
+					"enabled": true
+				},
+				{
+					"key": "zipcode",
+					"value": "1311XB",
+					"equals": true,
+					"enabled": true
+				},
+				{
+					"key": "city",
+					"value": "ALMERE",
+					"equals": true,
+					"enabled": true
+				},
+				{
+					"key": "country_code",
+					"value": "",
+					"equals": true,
+					"enabled": true
+				},
+				{
+					"key": "country_id",
+					"value": "163",
+					"equals": true,
+					"enabled": true
+				},
+				{
+					"key": "bulk_address",
+					"value": "YTo1OntzOjE2OiJtdWx0aXBsZV9hZGRyZXNzIjthOjM6e2k6MDtzOjM6IkFBQSI7aToxO3M6MzoiYmJiIjtpOjI7czozOiJjY2MiO31zOjIxOiJtdWx0aXBsZV9ob3VzZV9udW1iZXIiO2E6Mzp7aTowO3M6MjoiMTEiO2k6MTtzOjI6IjIyIjtpOjI7czoyOiIzMyI7fXM6MjA6Im11bHRpcGxlX3Bvc3RhbF9jb2RlIjthOjM6e2k6MDtzOjI6IjExIjtpOjE7czoyOiIyMiI7aToyO3M6MjoiMzMiO31zOjEzOiJtdWx0aXBsZV9jaXR5IjthOjM6e2k6MDtzOjY6ImFtcmVsaSI7aToxO3M6OToiQWhtZWRhYmFkIjtpOjI7czo2OiJtdW1iYWkiO31zOjE2OiJtdWx0aXBsZV9jb3VudHJ5IjthOjM6e2k6MDtzOjExOiJOZXRoZXJsYW5kcyI7aToxO3M6NToiaW5kaWEiO2k6MjtOO319",
+					"equals": true,
+					"enabled": true
+				},
+				{
+					"key": "page",
+					"value": "1",
+					"equals": true,
+					"enabled": true
+				},
+				{
+					"key": "limit",
+					"value": "10",
+					"equals": true,
+					"enabled": true
+				}
+			],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"headers": "Accept: application/json\nAuthorization: Bearer martin@creditdevice:bhavin0009\nContent-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "365ce9d5-ce3e-4f66-b8f7-d615c276815b",
+			"name": "http://localhost:8001/api/company",
+			"url": "http://localhost:8001/api/company",
+			"description": "Edit/PUT a Company",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": null,
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer martin@creditdevice:bhavin0009",
+					"description": null,
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": null,
+					"type": "text"
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\r\n    \"company_id\" : 202853,\r\n    \"distribution_partner_id\" : 2,\r\n    \"segmentation_id\" : 1,\r\n    \"name\" : \"B.V. Descol Kunststof Chemie 22\",\r\n    \"number\" : \"CL40259\",\r\n    \"number_distribution_partner\" : \"\",\r\n    \"registration_number\" : \"\",\r\n    \"vat_number\" : \"\",\r\n    \"website\" : \"\",\r\n    \"email\" : \"\",\r\n    \"address_type\" : \"\",\r\n    \"street\" : \"22\",\r\n    \"housenumber\" : \"9999\",\r\n    \"zipcode\" : \"99999\",\r\n    \"city\" : \"DEVENTER\",\r\n    \"country_code\" : \"NL\",\r\n    \"country_id\" : \"244\"\r\n    \r\n}",
+			"headers": "Accept: application/json\nAuthorization: Bearer martin@creditdevice:bhavin0009\nContent-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "65f2a744-c461-4d37-ad45-4edf2dfd5e15",
+			"name": "http://localhost:8001/api/companysoftdelete/1378",
+			"url": "http://localhost:8001/api/companysoftdelete/1378",
+			"description": null,
+			"data": null,
+			"dataMode": null,
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer martin@creditdevice:bhavin0009",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"headers": "Accept: application/json\nAuthorization: Bearer martin@creditdevice:bhavin0009\nContent-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "8688de77-57b8-44db-bf7a-1cd678df8aac",
+			"name": "http://localhost:8001/oauth/token",
+			"url": "http://localhost:8001/oauth/token",
+			"description": null,
+			"data": [
+				{
+					"key": "grant_type",
+					"value": "password",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "client_id",
+					"value": "2",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "client_secret",
+					"value": "KtvyQl0L5ejsxKresjbanGaCd8Y1k0H6Fq9GRyUu",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "username",
+					"value": "bs@softinform.dk",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "bhavin0009",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "scope",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"headerData": [],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "873784a6-9f5b-46e6-9ad2-708549c656e6",
+			"name": "http://localhost:8001/api/company/1378",
+			"url": "http://localhost:8001/api/company/202853",
+			"description": "Show Company by companyId",
+			"data": null,
+			"dataMode": null,
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": null,
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer martin@creditdevice:bhavin0009",
+					"description": null,
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"headers": "Accept: application/json\nAuthorization: Bearer martin@creditdevice:bhavin0009\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "9849dfa9-4ace-4eb9-a2ba-cc3c006b97b2",
+			"name": "http://localhost:8001/api/companies",
+			"url": "http://localhost:8001/api/companies",
+			"description": "Company List",
+			"data": null,
+			"dataMode": null,
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": null,
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer martin@creditdevice:bhavin0009",
+					"description": null,
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "lngcode",
+					"value": "NL",
+					"description": null,
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "limit",
+					"value": "1",
+					"description": null,
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "page",
+					"value": "1",
+					"description": null,
+					"type": "text",
+					"enabled": false
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"headers": "Accept: application/json\nAuthorization: Bearer martin@creditdevice:bhavin0009\n//lngcode: NL\n//limit: 1\n//page: 1\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "9bad8383-d8f8-4431-b80d-1d6c5dda4b19",
+			"name": "http://localhost:8001/api/company/4 Copy",
+			"url": "http://localhost:8001/api/company/30",
+			"description": "Delete a Company",
+			"data": null,
+			"dataMode": null,
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer martin@creditdevice:bhavin0009",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"headers": "Accept: application/json\nAuthorization: Bearer martin@creditdevice:bhavin0009\n",
+			"pathVariables": {}
+		}
+	]
+}

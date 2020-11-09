@@ -1,0 +1,183 @@
+{
+	"id": "6d3c87ff-a40c-4b25-aa25-33ca89950e47",
+	"name": "User-API",
+	"description": null,
+	"auth": null,
+	"events": null,
+	"variables": [],
+	"order": [
+		"58766622-c198-4592-9ebd-ec5b2ab18ce9",
+		"ef5f90ae-1bb2-436d-83fe-9d3f806c8786",
+		"4b1864dd-a9b3-4067-8796-4aa5c8af14ae",
+		"8d85c427-9ed8-4785-9f4d-9615a863d032",
+		"a40fac5a-ab38-4bd7-93f0-7c4f9dcc127e"
+	],
+	"folders_order": [],
+	"folders": [],
+	"requests": [
+		{
+			"id": "4b1864dd-a9b3-4067-8796-4aa5c8af14ae",
+			"name": "http://localhost:8001/api/user",
+			"url": "http://localhost:8001/api/user",
+			"description": "Add new User",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer martin@creditdevice:bhavin0009",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n\t\"user_id\": 4,\n\t\"contact_type_id\": 3,\n\t\"is_person\": 1,\n\t\"description\": \"Bhavin 0009 Solanki 0009\",\n\t\"firstname\": \"Bhavin 0009\",\n\t\"initials\": \"900\",\n\t\"infixes\": \"9000\",\n\t\"lastname\": \"Solanki 0009\",\n\t\"gender\": \"M\",\n\t\"language_code\": \"NL\"\n}\n",
+			"headers": "Accept: application/json\nAuthorization: Bearer martin@creditdevice:bhavin0009\nContent-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "58766622-c198-4592-9ebd-ec5b2ab18ce9",
+			"name": "http://localhost:8001/api/users",
+			"url": "http://localhost:8001/api/users",
+			"description": "Display Single User",
+			"data": null,
+			"dataMode": null,
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer martin@creditdevice:bhavin0009",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"headers": "Accept: application/json\nAuthorization: Bearer martin@creditdevice:bhavin0009\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "8d85c427-9ed8-4785-9f4d-9615a863d032",
+			"name": "http://localhost:8001/api/user",
+			"url": "http://localhost:8001/api/user",
+			"description": "Edit the user details",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer martin@creditdevice:bhavin0009",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n\t\"id\" : \"1\",\n    \"user_id\": \"4\",\n\t\"contact_type_id\": \"4\",\n\t\"is_person\": \"1\",\n\t\"description\": \"Bhavin \",\n\t\"firstname\": \"Solanki \",\n\t\"initials\": \"900\",\n\t\"infixes\": \"9000\",\n\t\"lastname\": \"Solanki 0009\",\n\t\"gender\": \"M\",\n\t\"language_code\": \"NL\"\n}",
+			"headers": "Accept: application/json\nAuthorization: Bearer martin@creditdevice:bhavin0009\nContent-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "a40fac5a-ab38-4bd7-93f0-7c4f9dcc127e",
+			"name": "http://localhost:8001/api/user/13",
+			"url": "http://localhost:8001/api/user/13",
+			"description": "Delete Single user",
+			"data": null,
+			"dataMode": null,
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer martin@creditdevice:bhavin0009",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"headers": "Accept: application/json\nAuthorization: Bearer martin@creditdevice:bhavin0009\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "ef5f90ae-1bb2-436d-83fe-9d3f806c8786",
+			"name": "http://localhost:8001/api/user/1",
+			"url": "http://localhost:8001/api/user/1",
+			"description": null,
+			"data": null,
+			"dataMode": null,
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer martin@creditdevice:bhavin0009",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"headers": "Accept: application/json\nAuthorization: Bearer martin@creditdevice:bhavin0009\n",
+			"pathVariables": {}
+		}
+	]
+}

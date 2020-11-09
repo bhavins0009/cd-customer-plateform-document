@@ -1,0 +1,51 @@
+  {
+  "collection": [
+    {
+      "id": 1,
+      "name": "CreditDevice B.V",
+      "number": 1000,
+      "registration_number": "123456780000",
+      "website": "https://www.creditdevice.com",
+      "distribution_partner": {
+        "id": 1,
+        "name": "CreditDevice B.V.",
+        "number": 1000
+      },
+	  "owner": {
+        "id": 1,
+		    "is_person": 1,
+        "fullname": "Martin van der Marel",
+        "description": "",
+		    "firstname": "Martin",
+		    "initials": "M",
+		    "infixes": "van der",
+		    "lastname": "Marel",
+		    "gender": "M"
+      },
+      "address": {
+        "primary": {
+              "id": 1,
+              "street": "Rudolf Tappenbeckweg",
+              "housenumber": "4",
+              "zipcode": "2202CD",
+              "city": "Noordwijk",
+              "countrycode":"NL",
+              "countryname":"The Netherlands",
+              "type": "office"
+        },
+        "additional": [
+          {
+            "id": 2,
+            "street": "Postbus 1111PB",
+            "type": "postal"
+          }
+        ]
+      }
+    }
+   
+  ],
+  "meta": {
+    "offset": 0,
+    "count": 2
+  }
+}

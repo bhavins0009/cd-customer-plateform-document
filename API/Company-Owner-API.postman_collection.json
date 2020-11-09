@@ -1,0 +1,121 @@
+{
+	"id": "ffbd5fd1-03ff-45b5-9f4b-88873c9840a8",
+	"name": "Company-Owner-API",
+	"description": null,
+	"auth": null,
+	"events": null,
+	"variables": [],
+	"order": [
+		"8288cf9d-270e-4f57-aa67-e7687aabea77",
+		"5709579b-6a40-41d6-9c1c-46a9ea284ac8",
+		"6397564e-50be-45f4-9a61-1eb9f9562133"
+	],
+	"folders_order": [],
+	"folders": [],
+	"requests": [
+		{
+			"id": "5709579b-6a40-41d6-9c1c-46a9ea284ac8",
+			"name": "http://localhost:8001/api/company/{id}/owner",
+			"url": "http://localhost:8001/api/company/2968/owner",
+			"description": "Add New Company Owner",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": null,
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer martin@creditdevice:bhavin0009",
+					"description": null,
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": null,
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n\t\"contact_type_id\": 4,\n\t\"user_id\": 4,\n\t\"is_person\": 1,\n\t\"description\": \"Bhavin Owner\",\n\t\"firstname\": \"Bhavin\",\n\t\"initials\": \"0\",\n\t\"infixes\": \"0\",\n\t\"lastname\": \"Solanki\",\n\t\"gender\": \"M\",\n\t\"language_coe\": \"EN\"\n}\n",
+			"headers": "Accept: application/json\nAuthorization: Bearer martin@creditdevice:bhavin0009\nContent-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "6397564e-50be-45f4-9a61-1eb9f9562133",
+			"name": "http://localhost:8001/api/company/1/owner",
+			"url": "http://localhost:8001/api/company/2968/owner",
+			"description": "Drop Company Owner Relationship",
+			"data": null,
+			"dataMode": null,
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": null,
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer martin@creditdevice:bhavin0009",
+					"description": null,
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"headers": "Accept: application/json\nAuthorization: Bearer martin@creditdevice:bhavin0009\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "8288cf9d-270e-4f57-aa67-e7687aabea77",
+			"name": "http://localhost:8001/api/company/1/owner",
+			"url": "http://localhost:8001/api/company/2968/owner",
+			"description": "Get Company Owner",
+			"data": null,
+			"dataMode": null,
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": null,
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer martin@creditdevice:bhavin0009",
+					"description": null,
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"headers": "Accept: application/json\nAuthorization: Bearer martin@creditdevice:bhavin0009\n",
+			"pathVariables": {}
+		}
+	]
+}

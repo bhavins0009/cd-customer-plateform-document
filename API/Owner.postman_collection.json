@@ -1,0 +1,55 @@
+{
+	"id": "818c440e-5371-4c10-a0d7-4339e836d68f",
+	"name": "Owner",
+	"description": "Owner",
+	"auth": null,
+	"events": null,
+	"variables": [],
+	"order": [
+		"142f47bc-9155-4d74-95d7-dc02773c8008"
+	],
+	"folders_order": [],
+	"folders": [],
+	"requests": [
+		{
+			"id": "142f47bc-9155-4d74-95d7-dc02773c8008",
+			"name": "owner-list",
+			"url": "http://localhost:8001/api/ownerlist?distribution_partner=all",
+			"description": "Get owner list when contact should be employee",
+			"data": null,
+			"dataMode": null,
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": null,
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer martin@creditdevice:bhavin0009",
+					"description": null,
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "distribution_partner",
+					"value": "all",
+					"equals": true,
+					"description": null,
+					"enabled": true
+				}
+			],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"headers": "Accept: application/json\nAuthorization: Bearer martin@creditdevice:bhavin0009\n",
+			"pathVariables": {}
+		}
+	]
+}

@@ -1,0 +1,161 @@
+{
+	"id": "adeb7e69-bfb6-4980-bbb2-4621866f2714",
+	"name": "Distribution-Partner",
+	"description": null,
+	"auth": null,
+	"events": null,
+	"variables": [],
+	"order": [
+		"b452b602-ce80-47c9-8e84-1704a58d5983",
+		"5294db90-0817-4ff0-b1a1-211013a2c26b",
+		"bac70acf-1f87-466b-8834-b87dbe30d7e4",
+		"63437e8b-dd42-455b-8f7b-eb5d7050b650"
+	],
+	"folders_order": [],
+	"folders": [],
+	"requests": [
+		{
+			"id": "5294db90-0817-4ff0-b1a1-211013a2c26b",
+			"name": "http://localhost:8001/api/distribution-partner",
+			"url": "http://localhost:8001/api/distribution-partner",
+			"description": "Insert Distribution Partner",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer martin@creditdevice:bhavin0009",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"type": "text"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n\t\"company_id\": \"1\",\n\t\"company_number_prefix\": \"CD\",\n\t\"company_number_index\": \"2\"\n}",
+			"headers": "Accept: application/json\nAuthorization: Bearer martin@creditdevice:bhavin0009\nContent-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "63437e8b-dd42-455b-8f7b-eb5d7050b650",
+			"name": "http://localhost:8001/api/distribution-partner/4",
+			"url": "http://localhost:8001/api/distribution-partner/4",
+			"description": "Delete Distribution Partner",
+			"data": null,
+			"dataMode": null,
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer martin@creditdevice:bhavin0009",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"headers": "Accept: application/json\nAuthorization: Bearer martin@creditdevice:bhavin0009\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "b452b602-ce80-47c9-8e84-1704a58d5983",
+			"name": "http://localhost:8001/api/distribution-partner",
+			"url": "http://localhost:8001/api/distribution-partner/2",
+			"description": "Get all distribution partner",
+			"data": null,
+			"dataMode": null,
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": null,
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer martin@creditdevice:bhavin0009",
+					"description": null,
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "root",
+					"value": "all",
+					"description": null,
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"headers": "Accept: application/json\nAuthorization: Bearer martin@creditdevice:bhavin0009\nroot: all\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "bac70acf-1f87-466b-8834-b87dbe30d7e4",
+			"name": "http://localhost:8001/api/distribution-partner/3",
+			"url": "http://localhost:8001/api/distribution-partner/3",
+			"description": "Update distribution partner",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer martin@creditdevice:bhavin0009",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"type": "text"
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n\t\"company_id\": \"1\",\n\t\"company_number_prefix\": \"CL\",\n\t\"company_number_index\": \"2\"\n}",
+			"headers": "Accept: application/json\nAuthorization: Bearer martin@creditdevice:bhavin0009\nContent-Type: application/json\n",
+			"pathVariables": {}
+		}
+	]
+}
